@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prepara Cursos Penha</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Barra de Abas -->
+  <div class="tab-bar" id="tab-bar">
+    <div class="tabs" id="tabs"></div>
+    <button class="new-tab-btn" id="new-tab" title="Nova aba">+</button>
+  </div>
+
+  <!-- Barra de Navegação -->
+  <div class="navbar">
+    <div class="nav-buttons">
+      <button id="back" title="Voltar">◀</button>
+      <button id="forward" title="Avançar">▶</button>
+      <button id="reload" title="Recarregar">⟳</button>
+      <button id="stop" title="Parar">✕</button>
+      <button id="home" title="Página inicial">🏠</button>
+    </div>
+    <input
+      type="text"
+      id="address-bar"
+      placeholder="Pesquise ou digite um endereço..."
+      autocomplete="off"
+    />
+    <div class="brand">
+      <span class="brand-text">Prepara Cursos Penha</span>
+    </div>
+  </div>
+
+  <!-- Área de Conteúdo -->
+  <div class="content" id="content">
+    <!-- Página inicial personalizada -->
+    <div class="home-page" id="home-page">
+      <div class="home-header">
+        <img
+          src="https://i.postimg.cc/7YvZR3gr/images.jpg"
+          alt="Prepara Cursos Penha"
+          class="home-logo"
+        />
+        <h1>Prepara Cursos Penha</h1>
+        <p>Bem-vindo ao seu navegador!</p>
+      </div>
+
+      <div class="home-search">
+        <input
+          type="text"
+          id="home-search-input"
+          placeholder="Pesquise na web..."
+        />
+        <button id="home-search-btn">Pesquisar</button>
+      </div>
+
+      <div class="shortcuts">
+        <a href="#" data-url="https://www.google.com" class="shortcut">Google</a>
+        <a href="#" data-url="https://www.youtube.com" class="shortcut">YouTube</a>
+        <a href="#" data-url="https://web.whatsapp.com" class="shortcut">WhatsApp Web</a>
+        <a href="#" data-url="https://mail.google.com" class="shortcut">Gmail</a>
+        <a href="#" data-url="https://www.preparacursos.com.br" class="shortcut">Prepara Cursos</a>
+        <a href="#" data-url="https://drive.google.com" class="shortcut">Google Drive</a>
+      </div>
+    </div>
+
+    <!-- Webviews (abas) -->
+    <div class="webviews" id="webviews"></div>
+  </div>
+
+  <!-- Barra de status de download -->
+  <div class="download-status" id="download-status"></div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
